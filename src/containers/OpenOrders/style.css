@@ -1,0 +1,39 @@
+
+    .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(23 28 41);
+
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(38, 43, 53, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color:white;
+  font-size: 30px;
+  text-align: center;
+}
+    .updatebutton{
+      font-size:30px;
+      height:75px;
+      align:center;
+      width:279.5%;
+    }
+    @media only screen and (max-width: 600px) {
+  body {
+   
+      
+    }
+       .grid{
+         display:block;
+      }
+      .grid-item{
+        padding:5px;
+        font-size:20px;
+      }
+      .updatebutton{
+        width:100%;
+        font-size:20px;
+      }
+  }

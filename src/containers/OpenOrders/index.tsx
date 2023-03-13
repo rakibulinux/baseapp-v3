@@ -20,7 +20,8 @@ import {
     userOpenOrdersFetch,
 } from '../../modules';
 import { OrderCommon } from '../../modules/types';
-
+// import './style.css'
+// import './script.js'
 interface ReduxProps {
     currentMarket: Market | undefined;
     list: OrderCommon[];
@@ -73,8 +74,54 @@ export class OpenOrdersContainer extends React.Component<Props> {
                             <CloseIcon className="cr-table-header__close" />
                         </span>
                     </div>
+                    
                 </div>
                 {fetching ? <div className="open-order-loading"><Spinner animation="border" variant="primary" /></div> : this.openOrders()}
+                {/* <div className="grid">
+      <div className="grid-item">
+        Target Spread
+        <div className="slidecontainer">
+            <input type="range" min="0.01" step="0.1" max="5" value="1" className="slider" id="spread" />
+            <a id="spreadvalue"></a>
+        </div>
+      </div>
+      <div className="grid-item">
+        Target Volume/h
+        <div className="slidecontainer">
+            <input type="range" min="1000" max="1000000" value="5000" className="slider" id="volume" />
+            <a id="volumevalue"></a>
+        </div>
+         </div>
+      <div className="grid-item">
+        Market Depth Within 2% in $
+        <div className="slidecontainer">
+            <input type="range" min="500" max="10000" value="1000" className="slider" id="depth" />
+            <a id="depthvalue"></a>
+        </div>
+ </div>
+      <div className="grid-item">
+        Orders Amount on Orderbook
+        <div className="slidecontainer">
+            <input type="range" min="1" max="100" value="50" className="slider" id="orders" />
+            <a id="ordersvalue"></a>
+        </div>
+         </div>
+      <div className="grid-item">
+        Orderbook Dynamics
+        <div className="slidecontainer">
+            <input type="range" min="1" max="100" value="50" className="slider" id="dynamic" />
+            <a id="dynamicvalue"></a>
+        </div>
+         </div>
+     <div className="grid-item">
+        Orders Frequency/min
+        <div className="slidecontainer">
+            <input type="range" min="1" max="100" value="50" className="slider" id="frequency" />
+            <a id="frequencyvalue"></a>
+        </div>
+         </div>
+       <button className="updatebutton" id="Update">Update Parameters</button>
+                </div> */}
             </div>
         );
     }

@@ -1,0 +1,43 @@
+
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: rgb(23 28 41);
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(38, 43, 53, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color:white;
+  font-size: 30px;
+  text-align: center;
+}
+    .updatebutton{
+      font-size:30px;
+      height:100px;
+      margin: auto;
+      width:97%;
+    }
+    @media only screen and (max-width: 500px) {
+  body {
+   
+      
+    }
+       .grid{
+
+           display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: rgb(23 28 41);
+  padding: 10px;
+      }
+      .grid-item{
+        padding:5px;
+        font-size:20px;
+      }
+      .updatebutton{
+        /* width:100%; */
+        font-size:20px;
+      }
+  }
